@@ -1,12 +1,9 @@
-import {View, Text} from 'react-native';
+import React from 'react';
 import './global.css';
+import RootNavigation from './src/routes/RootNavigation';
 
-const App = () => {
-  return (
-    <View className="flex-1 items-center justify-center bg-red-950">
-      <Text className="text-white text-4xl font-bold">App</Text>
-    </View>
-  );
+const App: React.FC = () => {
+  return <RootNavigation />;
 };
 
 export default App;
